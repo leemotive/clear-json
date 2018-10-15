@@ -1,0 +1,52 @@
+{
+  "name": "clear-json",
+  "version": "1.0.0",
+  "description": "view json string in a pretty format",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "lessc index.less lib/index.css && babel index.js -d lib",
+    "build:test": "lessc index.less test/index.css && webpack --mode development"
+  },
+  "author": "leemotive",
+  "license": "ISC",
+  "dependencies": {
+    "json5": "^2.1.0",
+    "prop-types": "^15.6.2",
+    "react": "^16.5.2",
+    "react-clipboard.js": "^2.0.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.1.2",
+    "@babel/core": "^7.1.2",
+    "@babel/plugin-proposal-class-properties": "^7.1.0",
+    "@babel/preset-env": "^7.1.0",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.4",
+    "react-dom": "^16.5.2",
+    "css-loader": "^1.0.0",
+    "less": "^3.8.1",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.2"
+  },
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leemotive/clear-json.git"
+  },
+  "keywords": [
+    "json",
+    "view",
+    "format",
+    "clear",
+    "pretty"
+  ],
+  "bugs": {
+    "url": "https://github.com/leemotive/clear-json/issues"
+  },
+  "homepage": "https://github.com/leemotive/clear-json#readme"
+}

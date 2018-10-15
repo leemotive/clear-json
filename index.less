@@ -1,0 +1,90 @@
+.clear-json-container {
+  .clear-json-node {
+    font-family: monospace;
+    padding: 2px 2px 2px 20px;
+    position: relative;
+  }
+
+  .hover-node {
+    outline: 1px solid #cdc;
+    background: #fff;
+  }
+
+  .active-node {
+    outline: 1px solid #8ac;
+    box-shadow: rgba(100,100,100,0.4) -3px 3px 5px;
+    font-weight: bold;
+    background-color: #fffff6;
+  }
+
+  .node-count {
+    padding-left: 20px;
+    color: #aaa;
+  }
+
+  .clear-json-content {
+    border-left: 1px dotted #bbb;
+    padding-left: 3px;
+  }
+
+  .ellipsis-content {
+    color: #888;
+  }
+
+  .node-key {
+    color: #1a191a;
+  }
+
+  .node-value {
+    color: #77b404;
+  }
+
+  .node-operations {
+    position: absolute;
+    right: 10px;
+    top: 0;
+
+    .node-operation {
+      cursor: pointer;
+      color: #1890ff;
+      font-weight: lighter;
+    }
+  }
+
+  .node-fold {
+    position: absolute;
+    display: block;
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+    left: 1px;
+    top: 2px;
+
+    &.closed-fold {
+      transform: rotate(-90deg);
+      left: 0;
+      top: 1px;
+    }
+    &:after {
+      position: absolute;
+      color: #aaa;
+      content: "\25bc";
+      font-size: 12px;
+    }
+  }
+
+  .node-bracket {
+    color: orchid;
+  }
+}
+
+.clear-json-container.clear-json-theme-dark {
+  background-color: #1e1e1e;
+  color: #ddd;
+  .node-key {
+    color: #9cdcfe;
+  }
+  .node-value {
+    color: #ce9178;
+  }
+}

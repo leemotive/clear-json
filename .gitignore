@@ -1,0 +1,4 @@
+node_modules
+/lib
+main.bundle.js
+index.css
